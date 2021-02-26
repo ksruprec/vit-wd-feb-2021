@@ -1,0 +1,15 @@
+h1 {
+    text-transform: lowercase;
+    color: lemonchiffon;
+    font-family: 'Pacifico', cursive;
+}
+
+h2 {
+    text-align: right;
+    color: lightsalmon;
+}
+
+h3 {
+    font-size: 58px;
+    color: limegreen
+}

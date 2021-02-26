@@ -1,0 +1,15 @@
+body {
+    min-height: 100vh;
+}
+
+header {
+    min-height: 20vh;
+}
+
+#mainBody {
+    min-height: 70vh;
+}
+
+footer {
+    min-height: 10vh;
+}
