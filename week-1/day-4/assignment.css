@@ -1,0 +1,63 @@
+body {
+    background-color: black;
+    color: tan;
+    font-family: 'Shippori Mincho', serif;
+}
+
+.column {
+    float: left;
+    text-align: center;
+}
+  
+#firstColumn {
+    width: 33%;
+}
+  
+#midColumn {
+    width: 33%;
+}
+
+#lastColumn {
+    width: 33%;
+}
+
+table {
+  margin: auto;
+}
+
+.images {
+    margin: 50px;  
+  }
+
+ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+  }
+
+h2 {
+    color: red;
+}
+
+#merchStore {
+    border-style: dotted;
+    border-color: linen;
+}
+
+#tour {
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    padding: 10px;
+}
+
+p {
+    padding: 10px;
+}
+
+#socialMedia {
+    margin-top: 20px;
+    margin-bottom: 90px;
+}
+
