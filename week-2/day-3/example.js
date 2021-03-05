@@ -1,0 +1,1 @@
+var value = document.getElementsByClassName('bearname')[0]
