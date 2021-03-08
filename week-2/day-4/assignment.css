@@ -1,0 +1,70 @@
+body {
+    background-color:lightsteelblue;
+    color: slategray;
+    font-family: monospace;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    min-width: 600px;
+    height: 400px;
+}
+
+.window {
+    width: 600px;
+    height: 400px;
+    border: solid 3px slategray;
+    margin: 0 auto;
+    overflow: hidden;
+  
+}
+
+@keyframes carousel {
+    from{
+        transform: translateX(0px)
+    }
+    to{
+        transform: translateX(-2400px)
+    }   
+}
+
+#imgSliderA {
+    display: flex;
+    animation-name: carousel;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+#imageSliderJS {
+    display: flex;
+}
+
+button {
+    background-color:slategray;
+    color: white;
+    font-size: 18px;
+    font-style: bold;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+#prev {
+    margin-right: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+
