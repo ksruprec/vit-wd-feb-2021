@@ -1,0 +1,18 @@
+var currentImgPosition = 0;
+
+function slideLeft() {
+    var slider = document.getElementsById("jsSlider");
+    slider.style.transform = "translateX(0px)";
+}
+
+function slideRight() {
+    if (currentImgPosition < 4){
+    currentImgPosition++;
+    var slider = document.getElementsById("jsSlider");
+    slider.style.transform = "translateX(-" + currentImgPosition * 500 + "px)";
+    }
+}
+
+string concatenation
+
+*jsSlider has to be display: flex
