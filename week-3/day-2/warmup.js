@@ -3,7 +3,8 @@
 var buttons = document.querySelectorAll('.number')
 var clearButton = document.getElementById('clear')
 var equalsButton = document.getElementById('equals')
-var display = document.getElementById('display')
+var display = document.getElementById('display');
+
 
 //add an eventListener to each of the buttons
 buttons.forEach(button => {
@@ -21,4 +22,4 @@ clearButton.addEventListener('click', () => {
   display.textContent = ""
 })
 
-display.textContent = "Yummy Math"
+
