@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="homepage">
+        <div class="navBar">
+            <img id="logo" src="mystery_logo.png" alt="">
+            <div id="navigation">
+                <a class="links" href="#featureLink">Features</a>
+                <a class="links" href="#reviewsLink">Reviews</a>
+                <a class="links" href="#buyNowLink">Buy Now</a>
+            </div>
+            <div id="subscribe-box">
+                <p>Sign up to get updates and exclusive offers.</p>
+                <input type="email" placeholder="Enter email">
+                <button id="subscribe-button">Subscribe</button>
+            </div>
+        </div>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>You have successfuly subscribed to our newsletter!</p>
+            </div>
+        </div>
+        <div class="heroImageContainer">
+            <img id="heroImage" src="hero_image.jpg">
+            <div class="slogan">
+                <h1>Built for the Mission</h1>
+            </div>
+        </div>
+        <br>
+        <div id="embedVid">
+            <h1 style="font-size: 50px">The 3 Zip Series of Assault Packs</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/C3LQxW8VVic" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+        <br>
+        <a id="featureLink">
+            <div class="feature-block">
+                <div id="image-gallery">
+                    <div id="image-column">
+                        <div class="column">
+                            <img src="image4.jpg" alt="3 zip design" style="width:100%; height:100%"
+                                onclick="replaceImage(this);">
+                        </div>
+                        <div class="column">
+                            <img src="image1.jpg" alt="ASAP-small and versatile for everyday carry." style="width:100%"
+                                onclick="replaceImage(this);">
+                        </div>
+                        <div class="column">
+                            <img src="image2.jpg" alt="3 Day Assault BVS-best pack for versatility and mobility."
+                                style="width:100%" onclick="replaceImage(this);">
+                        </div>
+                        <div class="column">
+                            <img src="image3.jpg" alt="Komodo Dragon-our mid-size assault pack." style="width:100%"
+                                onclick="replaceImage(this);">
+                        </div>
+                        <div class="column">
+                            <img src="image5.jpg" alt="Micro-adjustable Futura Yoke" style="width:100%"
+                                onclick="replaceImage(this);">
+                        </div>
+                    </div>
+                    <div class="image-window">
+                        <img id="expandedImage" src="image4.jpg" alt="3 zip design" style="width:100%; height:100%">
+                        <div id="imgText">3 zip design</div>
+                    </div>
+                </div>
+                <div id="feature-list">
+                    <h1>All 3 packs feature:</h1>
+                    <ul>
+                        <li>Our unique 3-zip design</li>
+                        <li>Water repellant, IR Compliant YKK® zippers</li>
+                        <li>Built of coated 500D CORDURA® material for maximum durability, UV, and weather protection
+                        </li>
+                        <li>Molle on the front and sides for customizable pouch attachment</li>
+                        <li>Adjustable Futura harness</li>
+                    </ul>
+                </div>
+            </div>
+        </a>
+        <a id="reviewsLink">
+            <h2>Customer Reviews</h2>
+            <div class="reviews"></div>
+            <div class="reviews"></div>
+            <div class="reviews"></div>
+        </a>
+        <a id="buyNowLink">
+            <button id="prev" onclick="prevImage()">&#10094;</button>
+            <div id="product-slider">
+                <div class="product">
+                    <img id="asap" src="image1.jpg" alt="" >
+                </div>
+                <div class="product">
+                    <img id="three-day" src="image2.jpg" alt="" >
+                </div>
+                <div class="product">
+                    <img id="komodo" src="image3.jpg" alt="" >
+                </div>
+            </div>    
+            <button id="next" onclick="nextImage()">&#10095;</button>
+        </a>
+
+        <footer></footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+<footer>
+    <div id="social-media">
+        <p>Follow us on Social Media</p>
+        <img src="" style="width: 100px; height: 100px">
+        <img src="" style="width: 100px; height: 100px">
+        <img src="" style="width: 100px; height: 100px">
+    </div>
+</footer>
+
+</html>
