@@ -5,12 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mystery Ranch</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Recursive&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -19,8 +23,8 @@
             <img id="logo" src="mystery_logo.png" alt="">
             <div id="navigation">
                 <a class="links" href="#featureLink">Features</a>
-                <a class="links" href="#reviewsLink">Reviews</a>
                 <a class="links" href="#buyNowLink">Buy Now</a>
+                <a class="links" href="#reviewsLink">Reviews</a>
             </div>
             <div id="subscribe-box">
                 <p>Sign up to get updates and exclusive offers.</p>
@@ -43,6 +47,9 @@
         <br>
         <div id="embedVid">
             <h1 style="font-size: 50px">The 3 Zip Series of Assault Packs</h1>
+            <p>Three styles make up this series: the ASAP, the 3-day Assault BVS, and the Komodo Dragon.
+                <br>Learn more about what each pack has to offer so you're ready for any mission.
+            </p>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/C3LQxW8VVic" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
@@ -54,23 +61,24 @@
                 <div id="image-gallery">
                     <div id="image-column">
                         <div class="column">
-                            <img src="image4.jpg" alt="3 zip design" style="width:100%; height:100%"
+                            <img class="icons" src="image4.jpg" alt="3 zip design" style="width:100%; height:100%"
                                 onclick="replaceImage(this);">
                         </div>
                         <div class="column">
-                            <img src="image1.jpg" alt="ASAP-small and versatile for everyday carry." style="width:100%"
-                                onclick="replaceImage(this);">
-                        </div>
-                        <div class="column">
-                            <img src="image2.jpg" alt="3 Day Assault BVS-best pack for versatility and mobility."
+                            <img class="icons" src="image1.jpg" alt="ASAP-small and versatile for everyday carry."
                                 style="width:100%" onclick="replaceImage(this);">
                         </div>
                         <div class="column">
-                            <img src="image3.jpg" alt="Komodo Dragon-our mid-size assault pack." style="width:100%"
+                            <img class="icons" src="image2.jpg"
+                                alt="3 Day Assault BVS-best pack for versatility and mobility." style="width:100%"
                                 onclick="replaceImage(this);">
                         </div>
                         <div class="column">
-                            <img src="image5.jpg" alt="Micro-adjustable Futura Yoke" style="width:100%"
+                            <img class="icons" src="image3.jpg" alt="Komodo Dragon-our mid-size assault pack."
+                                style="width:100%" onclick="replaceImage(this);">
+                        </div>
+                        <div class="column">
+                            <img class="icons" src="image5.jpg" alt="Micro-adjustable Futura Yoke" style="width:100%"
                                 onclick="replaceImage(this);">
                         </div>
                     </div>
@@ -92,27 +100,70 @@
                 </div>
             </div>
         </a>
-        <a id="reviewsLink">
-            <h2>Customer Reviews</h2>
-            <div class="reviews"></div>
-            <div class="reviews"></div>
-            <div class="reviews"></div>
-        </a>
         <a id="buyNowLink">
-            <button id="prev" onclick="prevImage()">&#10094;</button>
-            <div id="product-slider">
+            <div class="buy-container">
                 <div class="product">
-                    <img id="asap" src="image1.jpg" alt="" >
+                    <h2>ASAP</h2>
+                    <img id="asap" src="image1.jpg" alt="">
+                    <div class="pricing">
+                        <h3>$280.00</h3>
+                        <button>Add to Cart</button>
+                    </div>
                 </div>
                 <div class="product">
-                    <img id="three-day" src="image2.jpg" alt="" >
+                    <h2>3 Day Assault BVS</h2>
+                    <img id="three-day" src="image2.jpg" alt="">
+                    <div class="pricing">
+                        <h3>$399.00</h3>
+                        <button>Add to Cart</button>
+                    </div>
                 </div>
                 <div class="product">
-                    <img id="komodo" src="image3.jpg" alt="" >
+                    <h2>Komodo Dragon</h2>
+                    <img id="komodo" src="image3.jpg" alt="">
+                    <div class="pricing">
+                        <h3>$435.00</h3>
+                        <button>Add to Cart</button>
+                    </div>
                 </div>
-            </div>    
-            <button id="next" onclick="nextImage()">&#10095;</button>
+            </div>
         </a>
+        <br><br>
+        <a id="reviewsLink">
+            <h2 style="text-align: center">Customer Reviews</h2>
+            <div id="review-container">
+                
+                <div class="reviews">
+                    <h3>Michael S. - North Carolina </h3>
+                    <p class="review-text">
+                        Reviewing Komodo Dragon
+                        <br><br>
+                        "Holds all of my hunting gear and everything I need for really long hunting treks." 
+                    </p>
+                    <img src="komodo.jpg" alt="" style="width:300px">
+                </div>
+                <div class="reviews">
+                    <h3>Jenny R. - New York</h3>
+                    <p class="review-text">
+                        Reviewing 3 Day Assault
+                        <br><br>
+                        "Totally worth the money!! I use it everyday for school and work."
+                    </p>
+                    <img src="2_day.jpg" alt="" style="width:200px">
+                </div>
+                <div class="reviews">
+                    <h3>Jack C. - Montana</h3>
+                    <p class="review-text">
+                        Reviewing ASAP
+                        <br><br>
+                        "I've been using this pack for four years and it's still good as new."
+                    </p>
+                    <img src="asap.jpg" alt="" style="width:200px">
+                </div>
+            </div>
+            <br><br>
+        </a>
+        
 
         <footer></footer>
     </div>
