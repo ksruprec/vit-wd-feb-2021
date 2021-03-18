@@ -16,6 +16,10 @@ h2 {
     margin: 50px;
 }
 
+.tab-header {
+    text-align: center;
+}
+
 img {
     width: 100%;
 }
@@ -174,16 +178,7 @@ ul {
     font-size: 25px;
 }
 
-#review-text {
-    font-size: 25px;
-}
-
-#review-container {
-    margin: 0 auto;
-    width: 70%;
-}
-
-.buy-container {
+.shop-container {
     display: flex;
     justify-content: space-around;
 }
@@ -207,6 +202,61 @@ ul {
     position: absolute;
     right: 10px;
     bottom: 20px;
+}
+
+.add-to-cart {
+    background-color: orange;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transition-duration: 0.4s;
+}
+
+.add-to-cart:hover {
+    opacity: 0.8;
+}
+
+#review-text {
+    font-size: 25px;
+}
+
+#review-container {
+    margin: 0 auto;
+    width: 70%;
+}
+
+#review-button {
+    background-color: orange;
+    border: none;
+    padding: 12px 28px;
+    font-size: 24px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transition-duration: 0.4s;
+}
+
+#review-button:hover {
+    opacity: 0.8;
+}
+
+.checked {
+    color:orange;
+}
+
+.unchecked {
+    color: gray;
+}
+
+h4 {
+    text-align: center;
+}
+
+#social-media {
+   text-align: center;
+}
+
+.social-icons {
+    margin: 0 40px 0 40px;
 }
 
 

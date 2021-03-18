@@ -24,7 +24,9 @@ window.onclick = function(e) {
 function replaceImage(imgs) {
     var expandedImage = document.getElementById("expandedImage");
     var imgText = document.getElementById("imgText");
+    //replace image in window by source
     expandedImage.src = imgs.src;
+    //replace text by alt content
     imgText.innerHTML = imgs.alt;
   }
   

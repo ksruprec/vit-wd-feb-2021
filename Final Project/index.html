@@ -8,13 +8,8 @@
     <title>Mystery Ranch</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Recursive&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -23,7 +18,7 @@
             <img id="logo" src="mystery_logo.png" alt="">
             <div id="navigation">
                 <a class="links" href="#featureLink">Features</a>
-                <a class="links" href="#buyNowLink">Buy Now</a>
+                <a class="links" href="#shopLink">Shop</a>
                 <a class="links" href="#reviewsLink">Reviews</a>
             </div>
             <div id="subscribe-box">
@@ -100,14 +95,15 @@
                 </div>
             </div>
         </a>
-        <a id="buyNowLink">
-            <div class="buy-container">
+        <a id="shopLink">
+            <h2 class="tab-header">Shop</h2>
+            <div class="shop-container">
                 <div class="product">
                     <h2>ASAP</h2>
                     <img id="asap" src="image1.jpg" alt="">
                     <div class="pricing">
                         <h3>$280.00</h3>
-                        <button>Add to Cart</button>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
                 <div class="product">
@@ -115,7 +111,7 @@
                     <img id="three-day" src="image2.jpg" alt="">
                     <div class="pricing">
                         <h3>$399.00</h3>
-                        <button>Add to Cart</button>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
                 <div class="product">
@@ -123,21 +119,26 @@
                     <img id="komodo" src="image3.jpg" alt="">
                     <div class="pricing">
                         <h3>$435.00</h3>
-                        <button>Add to Cart</button>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
             </div>
         </a>
         <br><br>
         <a id="reviewsLink">
-            <h2 style="text-align: center">Customer Reviews</h2>
+            <h2 class="tab-header">Customer Reviews</h2>
             <div id="review-container">
-                
+                <button id="review-button">Write a Review</button>
                 <div class="reviews">
                     <h3>Michael S. - North Carolina </h3>
                     <p class="review-text">
                         Reviewing Komodo Dragon
                         <br><br>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span>
                         "Holds all of my hunting gear and everything I need for really long hunting treks." 
                     </p>
                     <img src="komodo.jpg" alt="" style="width:300px">
@@ -147,6 +148,11 @@
                     <p class="review-text">
                         Reviewing 3 Day Assault
                         <br><br>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star unchecked"></span>
                         "Totally worth the money!! I use it everyday for school and work."
                     </p>
                     <img src="2_day.jpg" alt="" style="width:200px">
@@ -156,6 +162,11 @@
                     <p class="review-text">
                         Reviewing ASAP
                         <br><br>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
                         "I've been using this pack for four years and it's still good as new."
                     </p>
                     <img src="asap.jpg" alt="" style="width:200px">
@@ -163,18 +174,24 @@
             </div>
             <br><br>
         </a>
-        
-
-        <footer></footer>
     </div>
     <script src="script.js"></script>
 </body>
 <footer>
+    <h4>Follow us on Social Media</h4>
     <div id="social-media">
-        <p>Follow us on Social Media</p>
-        <img src="" style="width: 100px; height: 100px">
-        <img src="" style="width: 100px; height: 100px">
-        <img src="" style="width: 100px; height: 100px">
+        <a href="https://www.instagram.com/mysteryranch/">
+            <img class="social-icons" src="instagram.png" style="width: 50px;
+            height: 50px;">
+        </a>
+        <a href="https://www.facebook.com/MysteryRanch?fref=ts">
+            <img class="social-icons" src="facebook.png" style="width: 50px;
+            height: 50px;">
+        </a>
+        <a href="https://twitter.com/theMysteryRanch">
+            <img class="social-icons" src="twitter.png" style="width: 50px;
+            height: 50px;">
+        </a>
     </div>
 </footer>
 
